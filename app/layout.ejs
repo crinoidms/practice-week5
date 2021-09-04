@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title><%- title %></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <link rel="stylesheet" href="./assets/style/all.css">
+    <!-- 字體 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+    <!-- icon 字體 -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet">
+  </head>
+
+  <body>
+    <section class="d-flex">
+      <aside class="d-flex flex-column justify-content-between">
+        <div>
+          <h2 class="mb-4"><img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/2b326fe971cd296bd54667a9b4a63c4b0f19fab3/week5/logo-ANSWER.svg" alt="logo"></h2>
+          <ul class="main-menu list-unstyled">
+            <li class="my-4"><a href="#" class="d-flex text-decoration-none">
+              <span class="material-icons me-3">insert_chart</span>
+              <span>Dashboard</span>
+            </a></li>
+            <li class="my-4"><a href="#" class="d-flex text-decoration-none">
+              <span class="material-icons me-3">question_answer</span>
+              <span>Question</span>
+            </a></li>
+            <li class="my-4"><a href="#" class="d-flex text-decoration-none">
+              <span class="material-icons me-3">assignment</span>
+              <span>Assignment</span>
+            </a></li>
+            <li class="my-4"><a href="#" class="d-flex text-decoration-none">
+              <span class="material-icons me-3">video_library</span>
+              <span>Course</span>
+            </a></li>
+            <li class="my-4"><a href="./admin.html" class="d-flex text-decoration-none <%- adminActive %>">
+              <span class="material-icons me-3">people</span>
+              <span>Admin</span>
+            </a></li>
+            <li class="my-4"><a href="#" class="d-flex text-decoration-none">
+              <span class="material-icons me-3">settings</span>
+              <span>Settings</span>
+            </a></li>
+          </ul>
+        </div>
+        <div class="d-flex align-items-center">
+          <div class="user-photo"><img src="https://images.unsplash.com/photo-1514794749374-fb67509dbb7f?ixlib=rb-1.2.1&ixid=eyjhchbfawqiojeymdd9&auto=format&fit=crop&w=2000&q=80" alt="" class="w-100 h-100"></div>
+          <div class="ms-3">
+            <div>Andy Chen</div>
+            <small class="text-secondary">andy0401@mail.com</small>
+          </div>
+        </div>
+      </aside>
+      <main>
+        <%- contents %>
+      </main>
+    </section>
+
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+  </body>
+
+</html>
